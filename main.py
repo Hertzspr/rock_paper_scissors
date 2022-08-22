@@ -28,7 +28,7 @@ scissors = '''
 import random as rd
 hand = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "))
 randhand = rd.randint(0,2)
-counter = hand - rd.randint(0, 2)  
+counter = abs(hand - rd.randint(0, 2))  
 
 if hand == 0:
   print(f"0 \n{rock}")
