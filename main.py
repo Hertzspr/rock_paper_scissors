@@ -28,7 +28,7 @@ scissors = '''
 import random as rd
 hand = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "))
 randhand = rd.randint(0,2)
-counter = abs(hand - rd.randint(0, 2))  
+
 
 if hand == 0:
   print(f"0 \n{rock}")
@@ -51,6 +51,7 @@ else:
   
 
 print("Computer choose: ")
+counter = abs(hand - rd.randint(0, 2))  
 if counter == 0:
   print(f"0 \n{rock}")
 elif counter == 1:
@@ -70,7 +71,7 @@ elif hand == 1 and counter == 2:
   print("You lost..")
 elif hand == 1 and counter == 0: 
   print("You've triumph!")
-if hand == 2 and counter == 2:
+elif hand == 2 and counter == 2:
   print("Draw~")
 elif hand == 2 and counter == 0:
   print("You lost..")
